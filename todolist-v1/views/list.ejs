@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>To Do List</title>
+    <title>ToDo List</title>
 </head>
 <body>
-<h1>It's a <%= kindOfDay %>!</h1>
 
 
-
+<% if (kindOfDay === 'Saturday' || kindOfDay === 'Sunday'){%>
+    <h1 style="color: mediumpurple"><%= kindOfDay %> ToDo List</h1>
+<%}else{ %>
+<h1 style="color: darkblue"><%= kindOfDay %> ToDo List</h1>
+<% } %>
 
 
 </body>
