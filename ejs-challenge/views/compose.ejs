@@ -6,12 +6,18 @@
 
 
 <form class="" action="/compose" method="post">
-    <label for="postTitle" >Title:</label><br>
-    <input type="text" name="postTitle" id="postTitle"><br>
-    <label for="postContent" >Content:</label><br>
-    <input type="text" name="postContent" id="postContent" ><br>
-    <button type="submit" name="button">Publish</button>
+    <div class="mb-3">
+    <label for="postTitle"  class="form-label" >Title</label><br>
+    <input type="text" name="postTitle" id="postTitle" class="form-control"><br>
+    </div>
+    <div class="mb-3">
+    <label for="postBody" class="form-label" >Post</label><br>
+        <textarea type="text" name="postBody" id="postBody" class="form-control" rows="10"></textarea><br>
+    </div>
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
 </form>
+
+
 
 <%- include('partials/footer'); -%>
 
