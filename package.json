@@ -9,6 +9,7 @@
   "author": "aida-gutierrez",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.7"
+    "ejs": "^3.1.7",
+    "lodash": "^4.17.21"
   }
 }
